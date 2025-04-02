@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+        
+        <div class="loading" id="loading">
+            Loading...
+        </div>
+        
+        <div class="error-message" id="error-message">
+            City not found. Please try again.
+        </div>
+        
+        <div class="weather-container" id="weather-container">
+            <div class="city-name" id="city-name"></div>
+            
+            <div class="weather-details">
+                <div class="weather-detail">
+                    <div class="weather-icon">🌡️</div>
+                    <div class="weather-label">Temperature</div>
+                    <div class="weather-value" id="temperature"></div>
+                </div>
+                
+                <div class="weather-detail">
+                    <div class="weather-icon">💨</div>
+                    <div class="weather-label">Wind Speed</div>
+                    <div class="weather-value" id="wind-speed"></div>
+                </div>
+                
+                <div class="weather-detail">
+                    <div class="weather-icon">💧</div>
+                    <div class="weather-label">Humidity</div>
+                    <div class="weather-value" id="humidity"></div>
+                </div>
+                
+                <div class="weather-detail">
+                    <div class="weather-icon">☁️</div>
+                    <div class="weather-label">Description</div>
+                    <div class="weather-value" id="description"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
